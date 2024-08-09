@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri Adiss</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="website icon" type="webp" href="https://files.prepinsta.com/wp-content/uploads/2020/07/python-removebg-preview.webp">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .song {
+            visibility: hidden;
+        }
+
+    </style>
+    <script>
+        window.addEventListener('load', () => {
+    Swal.fire({
+        title: 'Do you want to play music in the background?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+            animationTimeline();
+        } else {
+            animationTimeline();
+        }
+    });
+});
+
+        let docTitle = document.title;
+        window.addEventListener("blur", () => {
+        document.title = "Jangan Kemana-mana :(";
+        })
+        window.addEventListener("focus", () => {
+            document.title = docTitle;
+        })
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey && e.key === 'c') || 
+                (e.ctrlKey && e.key === 'u') || 
+                (e.ctrlKey && e.key === 's') || 
+                (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+                (e.key === 'F12')) {
+                e.preventDefault();
+            }
+        });
+
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <audio class="song" loop autoplay>
+        <source src="Joseph Vincent - Only You 🎶 (Lyrics) ｜ Lirik Lagu Terjemahan.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-black">Data Diri</h1>
+            <p class="text-black">Nama: Muhammad Adistia Pratama</p>
+            <p class="text-black">Kelas: X SIJA 2</p>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-black">Deskripsi Diri</h2>
+            <p class="text-black mt-2">
+                Saya Muhammad Adistia Pratama siswa dari SMK Negeri 69 Jakarta jurusan SIJA (Sistem Informasi Jaringan dan Aplikasi). Saya sebagai seorang pelajar memiliki minat dalam bidang Fullstack Web Developer, yang dapat menguasai dua bidang hal yang berlawanan seperti Front End (Desain) dan Back End. Saya sebagai web developer berusaha menjadi seorang yang bijak dan juga masih mencari berbagai pengalaman untuk menciptakan sebuah aplikasi/website yang baik dan juga menarik untuk di gunakan.
+            </p>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-black">Hobi</h2>
+            <ul class="list-disc list-inside text-black mt-2">
+                <li>Ngoding</li>
+                <li>Menggambar</li>
+                <li>Ngedit Gambar</li>
+                <li>Nonton Film</li>
+                <li>Baca Manga dan Komik Amerika</li>
+                <li>Baca Novel</li>
+            </ul>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-black">Makanan Favorit</h2>
+            <ol class="list-decimal list-inside text-black mt-2">
+                <li>Nasi uduk deket warung</li>
+                <li>Mie ayam depan komplek rumah</li>
+                <li>Nasi padang</li>
+                <li>Martabak</li>
+                <li>Seblak</li>
+            </ol>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-black">Bahasa Pemrograman dan Markup</h2>
+            <ul class="list-disc list-inside text-black mt-2">
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Pyhton</li>
+                <li>My SQL</li>
+                <li>C++ (New)</li>
+                <li>Bash</li>
+                <li>XML</li>
+                <li>HTML, CSS</li>
+                <li>Bootstrap (Framework)</li>
+                <li>Tailwind (Framework)</li>
+                <li>Node.Js (Framework)</li>
+                <li>Vue.Js (Framework)</li>
+            </ul>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-black">Tools Yang Di Pake Buat Ngoding</h2>
+            <ul class="list-disc list-inside text-black mt-2">
+                <li>Visual Studio Code</li>
+                <li>Replit</li>
+                <li>Github</li>
+                <li>Vercel</li>
+                <li>DevC++</li>
+                <li>WSL (Distro Ubuntu)</li>
+                <li>Figma</li>
+                <li>Android Emulator</li>
+            </ul>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-black">Foto</h2>
+            <img src="https://i.ibb.co.com/BPZ7zQC/IMG-20240809-034154.jpg" alt="Foto Adiss1" class="rounded-lg shadow-lg mt-4 w-full" />
+            <img src="https://i.ibb.co.com/Bz9wTkf/IMG-20240809-034353.jpg" alt="Foto Adiss2" class="rounded-lg shadow-lg mt-4 w-full" />
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-black">Sosial Media</h2>
+            <ul class="list-disc list-inside text-blue-500 mt-2">
+                <li><a href="https://www.instagram.com/bad.single_player?igsh=MTE4OHIwMTIxYjYxbA==" target="_blank" rel="noopener noreferrer" class="hover:underline">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61561893232924&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="hover:underline">Facebook</a></li>
+                <li><a href="https://github.com/badsingle1player" target="_blank" rel="noopener noreferrer" class="hover:underline">Github</a></li>
+                <li><a href="https://wa.me/message/6F6JAL4M5RFKD1" target="_blank" rel="noopener noreferrer" class="hover:underline">WhatsApp</a></li>
+                <li><a href="t.me/Bad_SinglePlayer" target="_blank" rel="noopener noreferrer" class="hover:underline">Telegram</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
